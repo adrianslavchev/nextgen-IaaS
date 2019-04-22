@@ -7,7 +7,7 @@
     <title>nextgen-Contacts</title>
     <style type="text/css">
         .auto-style1 {
-            height: 517px;
+            height: 523px;
         }
         .auto-style9 {
             width: 795px;
@@ -39,11 +39,6 @@
                     <asp:TableCell runat="server">Plamena Marcheva</asp:TableCell>
                     <asp:TableCell runat="server">marcheva@dxc.com</asp:TableCell>
                 </asp:TableRow>
-                <asp:TableRow runat="server" Height="20px" VerticalAlign="Bottom">
-                    <asp:TableCell runat="server"></asp:TableCell>
-                    <asp:TableCell runat="server">Tenyo Georgiev</asp:TableCell>
-                    <asp:TableCell runat="server">tenyo.georgiev@dxc.com</asp:TableCell>
-                </asp:TableRow>
                 <asp:TableRow runat="server" Height="40px" VerticalAlign="Bottom">
                     <asp:TableCell runat="server">Azure DD</asp:TableCell>
                     <asp:TableCell runat="server">Adrian Slavchev</asp:TableCell>
@@ -63,6 +58,11 @@
                     <asp:TableCell runat="server">AWS DD</asp:TableCell>
                     <asp:TableCell runat="server">Viktor Kalenderski</asp:TableCell>
                     <asp:TableCell runat="server">viktor.kalenderski@dxc.com</asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow runat="server" Height="20px" VerticalAlign="Bottom">
+                    <asp:TableCell runat="server"></asp:TableCell>
+                    <asp:TableCell runat="server">Tenyo Georgiev</asp:TableCell>
+                    <asp:TableCell runat="server">tenyo.georgiev@dxc.com</asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow runat="server" Height="20px" VerticalAlign="Bottom">
                     <asp:TableCell runat="server"></asp:TableCell>

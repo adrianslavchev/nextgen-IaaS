@@ -7,21 +7,17 @@
     <title>nextgen-About</title>
     <style type="text/css">
         .auto-style1 {
-            height: 596px;
+            height: 623px;
         }
         .auto-style2 {
             width: 795px;
             height: 95px;
         }
-        .auto-style3 {
-            background-repeat: no-repeat;
-            background-position: center;
-        }
         .auto-style4 {
             width: 661px;
             height: 399px;
         }
-    </style>
+        </style>
 </head>
 <body>
     <form id="form1" runat="server" class="auto-style1" style="background-image: url('Images/Hexagons.png'); background-position: center; background-repeat: no-repeat">
@@ -29,8 +25,10 @@
             <img alt="Logo" class="auto-style2" src="Images/Logo.png" /></div>
             
         <p style="font-family: Arial; font-size: small; text-align: center">&nbsp;
+            <asp:TextBox ID="TextBox1" runat="server" BackColor="Transparent" BorderStyle="None" Rows="1" Font-Names="Arial" Font-Size="Small" Height="80px" TextMode="MultiLine" Width="720px">Azure IaaS MVP is a two tier LOB solution - frontend web server (IIS) and a backend DB (MSSQL). The ASP.NET web application is running on IIS and connects to backend DB to perform read and write operations.
 
-            ASP.NET web application is running on frontend web server (IIS) and performs read/write to <span class="auto-style3">backend SQL server DB.</span></p>
+Azure IaaS functional diagram:</asp:TextBox>
+        </p>
         <p style="font-family: Arial; font-size: small; text-align: center">
             <img alt="Diagram" class="auto-style4" src="Images/Diagram.png" /></p>
 
