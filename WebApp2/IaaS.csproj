@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\IaaS.dll" />
+    <Content Include="bin\IaaS.pdb" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
     <Content Include="bin\roslyn\csc.exe" />
@@ -87,8 +89,6 @@
     <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
-    <Content Include="bin\WebApp2.dll" />
-    <Content Include="bin\WebApp2.pdb" />
     <Content Include="Contacts.aspx" />
     <Content Include="Images\Diagram.png" />
     <Content Include="Images\Hexagons.png" />
@@ -131,7 +131,6 @@
     <Content Include="bin\roslyn\vbc.exe.config" />
     <Content Include="bin\roslyn\vbc.rsp" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
-    <Content Include="bin\WebApp2.dll.config" />
     <Content Include="Install\nextgen_update.ps1" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
