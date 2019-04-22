@@ -99,7 +99,12 @@
 
         </p>
         <p>
+
             &nbsp;
+        
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:NextGenDB-Local %>" SelectCommand="SELECT * FROM [Feedback] ORDER BY [id]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:NextGenDB-Local %>" SelectCommand="SELECT * FROM [Category] ORDER BY [Category]"></asp:SqlDataSource>
+        
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="Horizontal" Font-Names="Arial" Font-Size="Small" HorizontalAlign="Center">
             <AlternatingRowStyle BackColor="White" ForeColor="#333333" Font-Names="Arial" Font-Size="Small" />
             <Columns>
@@ -122,20 +127,8 @@
             <SortedDescendingCellStyle BackColor="#FFFDF8" />
             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
         </asp:GridView>
-        </p>
-        <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
-        <p>
-            &nbsp;</p>
-
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:NextGenDB-Local %>" SelectCommand="SELECT * FROM [Feedback] ORDER BY [id]"></asp:SqlDataSource>
-        <br />
-        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:NextGenDB-Local %>" SelectCommand="SELECT * FROM [Category] ORDER BY [Category]"></asp:SqlDataSource>
         
-         <p style="font-family: Arial; font-size: large; text-align: center;">             
-             &nbsp;</p>
+        </p>
         <asp:Table ID="Table2" runat="server" HorizontalAlign="Center">
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server">
@@ -153,7 +146,6 @@
             </asp:TableRow>
         </asp:Table>
 
-       &nbsp;<br />
     </form>
 </body>
 </html>
