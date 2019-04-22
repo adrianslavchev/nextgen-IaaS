@@ -6,18 +6,17 @@
 <head runat="server">
     <title>nextgen</title>
     <style type="text/css">
-        .auto-style2 {
-            width: 620px;
-            height: 1px;
-        }
         .auto-style3 {
             width: 795px;
             height: 95px;
         }
+        .auto-style4 {
+            height: 720px;
+        }
         </style>
     </head>
 <body>
-    <form id="form1" runat="server" style="background-position: center; background-repeat: no-repeat; background-image: url('Images/Hexagons.png');">
+    <form id="form1" runat="server" style="background-position: center; background-repeat: no-repeat; background-image: url('Images/Hexagons.png');" class="auto-style4">
         <div style="text-align: center;">
             <img alt="Logo" class="auto-style3" src="Images/Logo.png" /><br />
             </div>
@@ -101,17 +100,13 @@
         </p>
         <p>
             &nbsp;
-        </p>
-
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:NextGenDB-Local %>" SelectCommand="SELECT * FROM [Feedback] ORDER BY [id]"></asp:SqlDataSource>
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="Horizontal" Font-Names="Arial" Font-Size="Small" HorizontalAlign="Center">
             <AlternatingRowStyle BackColor="White" ForeColor="#333333" Font-Names="Arial" Font-Size="Small" />
             <Columns>
-                <asp:BoundField DataField="id" HeaderText="#" InsertVisible="False" ReadOnly="True" SortExpression="id" >
-                <HeaderStyle Font-Names="Arial" Font-Size="Small" />
+                <asp:BoundField DataField="id" HeaderText="id" InsertVisible="False" ReadOnly="True" SortExpression="id" >
                 </asp:BoundField>
                 <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
-                <asp:BoundField DataField="Email" HeaderText="E-mail" SortExpression="Email" />
+                <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
                 <asp:BoundField DataField="Category" HeaderText="Category" SortExpression="Category" />
                 <asp:BoundField DataField="Feedback" HeaderText="Feedback" SortExpression="Feedback" />
                 <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date" />
@@ -127,12 +122,18 @@
             <SortedDescendingCellStyle BackColor="#FFFDF8" />
             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
         </asp:GridView>
+        </p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:NextGenDB-Local %>" SelectCommand="SELECT * FROM [Feedback] ORDER BY [id]"></asp:SqlDataSource>
         <br />
         <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:NextGenDB-Local %>" SelectCommand="SELECT * FROM [Category] ORDER BY [Category]"></asp:SqlDataSource>
         
          <p style="font-family: Arial; font-size: large; text-align: center;">             
-             <img alt="Line" class="auto-style2" src="Images/Line.png" />
-         </p>
+             &nbsp;</p>
         <asp:Table ID="Table2" runat="server" HorizontalAlign="Center">
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server">
