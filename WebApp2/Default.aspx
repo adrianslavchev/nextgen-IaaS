@@ -11,7 +11,7 @@
             height: 95px;
         }
         .auto-style4 {
-            height: 720px;
+            height: 711px;
         }
         </style>
     </head>
@@ -123,6 +123,8 @@
             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
         </asp:GridView>
         </p>
+        <p>
+            &nbsp;</p>
         <p>
             &nbsp;</p>
         <p>
